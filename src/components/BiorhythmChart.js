@@ -34,8 +34,8 @@ const BiorhythmChart = ({ birthDate, targetDate }) => {
         />
         <ReferenceLine x={data[15].date} stroke='orange' strokeWidth={1.75}/>
         <Line dataKey='physical' dot={false} className="physical" type='natural' />
-        <Line dataKey='emotional' dot={false} className="emotional" type='natural' />
-        <Line dataKey='mental' dot={false} className="mental" type='natural' />
+        <Line dataKey='emotional' dot={false} stroke='red' type='natural' />
+        <Line dataKey='mental' dot={false} className="blue" type='natural' />
       </LineChart>
     </ResponsiveContainer>
   )
